@@ -1,11 +1,18 @@
+:root {
+/* Цвета шрифта */
+  --secondary-color: #757575;
+  --accent-color: #2196F3;
+  --accent-button-color: #fff;
+/* Цвета фона */
+  --primary-bgr-color: #fff;
+  --accent-bgr-color: #2196F3;
+}
+
+
 body {
   color: #212121;
   background-color: #fff;
-
   font-family: 'Roboto', sans-serif;
-
-
-  
 }
 
 .list {
@@ -25,7 +32,7 @@ body {
 }
 
 .word-web {
-  color: #2196F3;
+  color: var(--accent-color);
 }
 
 /* Site nav */
@@ -40,12 +47,12 @@ body {
 }
 .site-nav a:hover,
 .site-nav a:focus {
-  color: #2196F3;
+  color: var(--accent-color);
 }
 
 /* Е-мейл и адрес */
 .mail-phone a {
-  color: #757575;
+  color: var(--secondary-color);
   text-decoration: none;
   
   font-weight: 500;
@@ -56,7 +63,7 @@ body {
 
 .mail-phone a:hover,
 .mail-phone a:focus {
-  color: #2196F3;
+  color: var(--accent-color);
 }
 
 /* Hero */
@@ -74,8 +81,8 @@ body {
 }
 
 .hero-button {
-    color: #fff;
-    background-color: #2196F3;
+    color: var(--accent-button-color);
+    background-color: var(--accent-bgr-color);
 
     font-family: inherit;
     font-weight: 700;
@@ -88,8 +95,8 @@ body {
 
 .hero-button:hover,
 .hero-button:focus {
-  color: #fff;
-  background-color: #2196F3;
+  color: var(--accent-button-color);
+  background-color: var(--accent-bgr-color);
   cursor: pointer;
 }
 
@@ -117,7 +124,7 @@ body {
 
 
 .section-paragraph p {
-  color: #757575;
+  color: var(--secondary-color);
   
   /* font-weight: 400; */
   font-size: 14px;
@@ -138,7 +145,7 @@ body {
 }
 
 .our-team p {
-  color: #757575;
+  color: var(--secondary-color);
   
   /* font-weight: 400; */
   font-size: 16px;
@@ -177,7 +184,7 @@ body {
 }
 .contacts-footer a:hover,
 .contacts-footer a:focus {
-  color: #2196F3;
+  color: var(--accent-color);
 }
 
 
@@ -197,14 +204,14 @@ body {
 }
 
 /* .light-button {
-  color: #fff;
-  background-color: #2196F3;
+  color: var(--accent-button-color);
+  background-color: var(--accent-bgr-color);
 } */
 
 .filter-buttons:hover,
 .filter-buttons:focus {
-  color: #fff;  
-  background-color: #2196F3;
+  color: var(--accent-button-color);
+  background-color: var(--accent-bgr-color);
   cursor: pointer;
 }
 
@@ -217,7 +224,7 @@ body {
 }
 .projects a:hover,
 .projects a:focus {
-  color: #2196F3;
+  color: var(--accent-color);
 
 }
 
@@ -229,7 +236,7 @@ body {
 }
 
 .projects p {
-  color: #757575; 
+  color: var(--secondary-color);
   /* font-weight: 400; */
   font-size: 16px;
   line-height: 1.88;
