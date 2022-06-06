@@ -1,0 +1,104 @@
+body {
+  color: #212121;
+  background-color: #fff;
+
+  
+}
+
+.list {
+  list-style: none;
+  }
+
+/* Логотип */
+.logo {
+color: inherit;
+text-decoration: none;
+}
+.word-web {
+  color: #2196F3;
+}
+
+/* Site nav */
+.site-nav a {
+color: inherit;
+text-decoration: none;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  color: #2196F3;
+}
+
+/* Е-мейл и адрес */
+.mail-phone a {
+color: #757575;
+text-decoration: none;
+}
+
+.mail-phone a:hover,
+.mail-phone a:focus {
+  color: #2196F3;
+}
+
+/* Hero */
+.hero-title {
+  color: #fff;
+  /* Временный цвет фона для видимости белого заголовка */
+  background-color: #2F303A;
+}
+
+.button {
+    color: #fff;
+    background-color: #2196F3;
+}
+
+
+/* Наши достоинства */
+
+/* .section-title {
+
+} */
+
+
+/* 
+.section-paragraph h3 {
+  === будет вставлено разvер штрифта и all cups===
+} */
+
+
+
+.section-paragraph p {
+  color: #757575;
+}
+
+/* Наша команда */
+.grey {
+  background-color: #F5F4FA;
+}
+
+/* .our-team h3 {
+} */
+
+.our-team p {
+  color: #757575;
+}
+
+
+
+/* Footer */
+
+.footer {
+  color: #fff;
+  background-color: #2F303A;
+}
+/* Контакты в футере */
+.contacts-footer a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+.contacts-footer a:hover,
+.contacts-footer a:focus {
+  color: #2196F3;
+}
+
+
+
