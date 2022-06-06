@@ -46,7 +46,7 @@ text-decoration: none;
   background-color: #2F303A;
 }
 
-.button {
+.hero-button {
     color: #fff;
     background-color: #2196F3;
 }
@@ -83,7 +83,6 @@ text-decoration: none;
 }
 
 
-
 /* Footer */
 
 .footer {
@@ -100,5 +99,49 @@ text-decoration: none;
   color: #2196F3;
 }
 
+
+
+
+
+/* PORTFOLIO PAGE */
+
+
+/* Filter buttons */
+.filter-buttons {
+  background-color: #F5F4FA;
+}
+
+/* .light-button {
+  color: #fff;
+  background-color: #2196F3;
+} */
+
+.filter-buttons:hover,
+.filter-buttons:focus {
+  color: #fff;  
+  background-color: #2196F3;
+}
+/* Секция с работами из Портфолио  */
+
+
+.projects a {
+  color: inherit;
+  text-decoration: none;
+}
+.projects a:hover,
+.projects a:focus {
+  color: #2196F3;
+
+}
+
+
+/* .projects h2 {
+
+} */
+
+.projects p {
+  color: #757575;
+  
+}
 
 
