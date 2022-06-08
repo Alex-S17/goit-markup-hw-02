@@ -1,18 +1,28 @@
 :root {
 /* Цвета шрифта */
+  --primary-color: #212121;
   --secondary-color: #757575;
   --accent-color: #2196F3;
   --accent-button-color: #fff;
+  --hero-title-color: #fff;
+  --footer-font-color: #fff;
+  --link-footer-color: rgba(255, 255, 255, 0.6);
 /* Цвета фона */
   --primary-bgr-color: #fff;
   --accent-bgr-color: #2196F3;
+  --hero-butt-active: #188CE8;
+
+  --footer-bgr-color: #2F303A;
+  --our-team-bgr-color: #F5F4FA;
+  --filter-butt-bgr-col: #F5F4FA;
 }
 
 
 body {
-  color: #212121;
-  background-color: #fff;
+  color: var(--primary-color);
+  /* background-color: #fff; */
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 .list {
@@ -35,42 +45,43 @@ body {
   color: var(--accent-color);
 }
 
-/* Site nav */
-.site-nav a {
+/* Site navigation */
+
+.nav-link {
   color: inherit;
   text-decoration: none;
   
   font-weight: 500;
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.site-nav a:hover,
-.site-nav a:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-color);
 }
 
 /* Е-мейл и адрес */
-.mail-phone a {
+.mail-phone {
   color: var(--secondary-color);
   text-decoration: none;
   
   font-weight: 500;
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
 
-.mail-phone a:hover,
-.mail-phone a:focus {
+.mail-phone:hover,
+.mail-phone:focus {
   color: var(--accent-color);
 }
 
 /* Hero */
 .hero-title {
-  color: #fff;
+  color: var(--hero-title-color);
   /* Временный цвет фона для видимости белого заголовка */
-  background-color: #2F303A;
+  background-color: var(--footer-bgr-color);
 
   font-weight: 900;
   font-size: 44px;
@@ -96,7 +107,7 @@ body {
 .hero-button:hover,
 .hero-button:focus {
   color: var(--accent-button-color);
-  background-color: var(--accent-bgr-color);
+  background-color: var(--hero-butt-active);
   cursor: pointer;
 }
 
@@ -111,9 +122,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-
-
-.section-paragraph h3 {
+.section-subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -121,30 +130,28 @@ body {
   text-transform: uppercase;
 }
 
-
-
-.section-paragraph p {
+.section-paragraph {
   color: var(--secondary-color);
   
   /* font-weight: 400; */
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
 /* Наша команда */
 .grey {
-  background-color: #F5F4FA;
+  background-color: var(--our-team-bgr-color);
 }
 
-.our-team h3 {
+.team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
-.our-team p {
+.team-paragraph {
   color: var(--secondary-color);
   
   /* font-weight: 400; */
@@ -157,8 +164,8 @@ body {
 /* Footer */
 
 .footer {
-  color: #fff;
-  background-color: #2F303A;
+  color: var(--footer-font-color);
+  background-color: var(--footer-bgr-color);
 }
 /* Контакты в футере */
 
@@ -166,24 +173,24 @@ body {
   font-style: normal;
 }
 
-.contacts-footer p {
+.address-footer {
   /* font-weight: 400; */
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.contacts-footer a {
-  color: rgba(255, 255, 255, 0.6);
+.link-footer {
+  color: var(--link-footer-color);
   text-decoration: none;
 
   /* font-weight: 400; */
-  font-size: 14px;
+  /* font-size: 14px; */
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.contacts-footer a:hover,
-.contacts-footer a:focus {
+.link-footer:hover,
+.link-footer:focus {
   color: var(--accent-color);
 }
 
@@ -193,7 +200,7 @@ body {
 /* Filter buttons */
 
 .filter-buttons {
-  background-color: #F5F4FA;
+  background-color: var(--filter-butt-bgr-col);
 
   font-family: inherit;
   font-weight: 500;
@@ -203,10 +210,10 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* .light-button {
+.current-button {
   color: var(--accent-button-color);
   background-color: var(--accent-bgr-color);
-} */
+}
 
 .filter-buttons:hover,
 .filter-buttons:focus {
@@ -218,24 +225,24 @@ body {
 
 /* Секция с работами из Портфолио  */
 
-.projects a {
+.portfolio-link {
   color: inherit;
   text-decoration: none;
 }
-.projects a:hover,
-.projects a:focus {
+.portfolio-link:hover,
+.portfolio-link:focus {
   color: var(--accent-color);
 
 }
 
-.projects h2 {
+.portfolio-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
-.projects p {
+.portfolio-paragraph {
   color: var(--secondary-color);
   /* font-weight: 400; */
   font-size: 16px;
